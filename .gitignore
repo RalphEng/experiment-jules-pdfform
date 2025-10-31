@@ -31,3 +31,4 @@ reports/
 
 # Lombok
 .apt_generated/
+__pycache__/
