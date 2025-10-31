@@ -24,7 +24,9 @@ buildNumber.properties
 # Application
 *.log
 *.pdf
+!src/test/resources/**/*.pdf
 *.properties
+!src/test/resources/**/*.properties
 reports/
 
 # Lombok
