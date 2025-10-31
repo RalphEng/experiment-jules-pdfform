@@ -1,0 +1,18 @@
+<configuration>
+
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <target>System.out</target>
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <root level="DEBUG">
+    <appender-ref ref="CONSOLE" />
+  </root>
+
+  <logger name="com.example.pdfformfiller" level="DEBUG"/>
+  <logger name="org.apache.pdfbox" level="WARN"/>
+  <logger name="org.junit" level="INFO"/>
+
+</configuration>
