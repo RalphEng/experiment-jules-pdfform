@@ -3,6 +3,7 @@
 Script to create fillable PDF forms as required by the test specification.
 """
 
+import os
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfbase import pdfform
@@ -10,7 +11,7 @@ from reportlab.lib.colors import black, white
 
 def create_simple_form():
     """Create sample-form-simple.pdf with basic text fields"""
-    filename = "src/test/resources/pdfs/sample-form-simple.pdf"
+    filename = os.path.join("src", "test", "resources", "pdfs", "sample-form-simple.pdf")
     c = canvas.Canvas(filename, pagesize=letter)
     width, height = letter
     
@@ -64,7 +65,7 @@ def create_simple_form():
 
 def create_complex_form():
     """Create sample-form-complex.pdf with multiple field types"""
-    filename = "src/test/resources/pdfs/sample-form-complex.pdf"
+    filename = os.path.join("src", "test", "resources", "pdfs", "sample-form-complex.pdf")
     c = canvas.Canvas(filename, pagesize=letter)
     width, height = letter
     
@@ -190,7 +191,7 @@ def create_complex_form():
 
 def create_special_chars_form():
     """Create sample-form-special-chars.pdf with special character field names"""
-    filename = "src/test/resources/pdfs/sample-form-special-chars.pdf"
+    filename = os.path.join("src", "test", "resources", "pdfs", "sample-form-special-chars.pdf")
     c = canvas.Canvas(filename, pagesize=letter)
     width, height = letter
     
