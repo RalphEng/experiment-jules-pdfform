@@ -1,9 +1,5 @@
 package com.example.pdfformfiller;
 
-import com.example.pdfformfiller.model.FieldResult;
-import com.example.pdfformfiller.model.ReportData;
-import lombok.extern.slf4j.Slf4j;
-
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -12,6 +8,11 @@ import java.nio.charset.StandardCharsets;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import com.example.pdfformfiller.model.FieldResult;
+import com.example.pdfformfiller.model.ReportData;
+
+import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class ReportGenerator {

@@ -1,11 +1,11 @@
 package com.example.pdfformfiller.model;
 
+import java.time.Instant;
+import java.util.List;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-
-import java.time.Instant;
-import java.util.List;
 
 @Data
 @Builder
@@ -25,6 +25,6 @@ public class ReportData {
     }
 
     public int getErrorCount() {
-        return (int) fieldResults.stream().filter(r -> r.getStatus() == FieldStatus.ERROR).count();
+        return (int) fieldResults.stream().filter(r -> r.getStatus() == FieldStatus.ERROR).count();        
     }
 }

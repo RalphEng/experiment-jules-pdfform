@@ -1,13 +1,5 @@
 package com.example.pdfformfiller;
 
-import com.example.pdfformfiller.model.FieldResult;
-import com.example.pdfformfiller.model.FieldStatus;
-import com.example.pdfformfiller.model.ReportData;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.pdfbox.Loader;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.interactive.form.*;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -19,11 +11,38 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import org.apache.pdfbox.Loader;
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
+import org.apache.pdfbox.pdmodel.interactive.form.PDCheckBox;
+import org.apache.pdfbox.pdmodel.interactive.form.PDChoice;
+import org.apache.pdfbox.pdmodel.interactive.form.PDField;
+import org.apache.pdfbox.pdmodel.interactive.form.PDRadioButton;
+import org.apache.pdfbox.pdmodel.interactive.form.PDTextField;
+
+import com.example.pdfformfiller.model.FieldResult;
+import com.example.pdfformfiller.model.FieldStatus;
+import com.example.pdfformfiller.model.ReportData;
+
+import lombok.extern.slf4j.Slf4j;
+
 @Slf4j
 public class PdfFormProcessor {
 
+    private static final Set<String> CHECKBOX_TRUE_VALUES =
+        Set.of("true", "yes", "1", "on");
+
     public ReportData fillForm(InputStream pdfInput, Map<String, String> properties, OutputStream pdfOutput) throws IOException {
+        if (properties == null) {
+            throw new IllegalArgumentException("Properties map cannot be null");
+        }
+
         log.info("Starting PDF form processing with {} properties.", properties.size());
+
+        if (properties.isEmpty()) {
+            log.warn("Properties map is empty. No fields will be filled.");
+        }
+
         try (PDDocument document = Loader.loadPDF(pdfInput.readAllBytes())) {
             PDAcroForm acroForm = document.getDocumentCatalog().getAcroForm();
             if (acroForm == null) {
@@ -101,8 +120,7 @@ public class PdfFormProcessor {
     }
 
     private void fillCheckBox(PDCheckBox checkBox, String value) throws IOException {
-        String lowerValue = value.toLowerCase();
-        if ("true".equals(lowerValue) || "yes".equals(lowerValue) || "1".equals(lowerValue) || "on".equals(lowerValue)) {
+        if (CHECKBOX_TRUE_VALUES.contains(value.toLowerCase())) {
             checkBox.check();
         } else {
             checkBox.unCheck();

@@ -16,10 +16,11 @@ public class PropertyParser {
     public static Map<String, String> parse(InputStream input) throws IOException {
         log.debug("Starting property parsing.");
         Map<String, String> properties = new LinkedHashMap<>();
-        BufferedReader reader = new BufferedReader(new InputStreamReader(input, StandardCharsets.UTF_8));
-        String line;
-        StringBuilder rawLine = new StringBuilder();
-        while ((line = reader.readLine()) != null) {
+
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(input, StandardCharsets.UTF_8))) {
+            String line;
+            StringBuilder rawLine = new StringBuilder();
+            while ((line = reader.readLine()) != null) {
             if (rawLine.length() > 0) {
                 rawLine.setLength(0);
             }
@@ -78,10 +79,11 @@ public class PropertyParser {
 
             String value = (valueIndex < len) ? currentLine.substring(valueIndex) : "";
 
-            properties.put(unescape(key), unescape(value.trim()));
-            log.debug("Parsed property: key='{}', value='{}'", unescape(key), unescape(value));
+                properties.put(unescape(key), unescape(value.trim()));
+                log.debug("Parsed property: key='{}', value='{}'", unescape(key), unescape(value));
+            }
+            log.info("Property parsing complete. Found {} properties.", properties.size());
         }
-        log.info("Property parsing complete. Found {} properties.", properties.size());
         return properties;
     }
 
