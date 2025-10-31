@@ -39,7 +39,7 @@ endobj
 >> /DA (/Helv 12 Tf .1 .1 .1 rg) /DV () /F 4 /FT /Tx 
   /Ff 0 /MK <<
 /BC [ .1 .1 .1 ] /BG [ .8 .843 1 ]
->> /MaxLen 100 /P 14 0 R /Rect [ 50 667 250 687 ] /Subtype /Widget 
+>> /MaxLen 100 /P 20 0 R /Rect [ 50 667 250 687 ] /Subtype /Widget 
   /T (user.name) /TU (Field with dot in name) /Type /Annot /V ()
 >>
 endobj
@@ -64,8 +64,8 @@ endobj
 >> /DA (/Helv 12 Tf .1 .1 .1 rg) /DV () /F 4 /FT /Tx 
   /Ff 0 /MK <<
 /BC [ .1 .1 .1 ] /BG [ .8 .843 1 ]
->> /MaxLen 100 /P 14 0 R /Rect [ 50 587 250 607 ] /Subtype /Widget 
-  /T (field=value) /TU (Field with equals sign in name) /Type /Annot /V ()
+>> /MaxLen 100 /P 20 0 R /Rect [ 50 587 250 607 ] /Subtype /Widget 
+  /T (user_email) /TU (Field with underscore in name) /Type /Annot /V ()
 >>
 endobj
 11 0 obj
@@ -89,13 +89,63 @@ endobj
 >> /DA (/Helv 12 Tf .1 .1 .1 rg) /DV () /F 4 /FT /Tx 
   /Ff 0 /MK <<
 /BC [ .1 .1 .1 ] /BG [ .8 .843 1 ]
->> /MaxLen 100 /P 14 0 R /Rect [ 50 507 250 527 ] /Subtype /Widget 
-  /T (path\\to\\file) /TU (Field with backslashes in name) /Type /Annot /V ()
+>> /MaxLen 100 /P 20 0 R /Rect [ 50 507 250 527 ] /Subtype /Widget 
+  /T (address-line1) /TU (Field with hyphen in name) /Type /Annot /V ()
 >>
 endobj
 14 0 obj
+<< /BaseFont /Helvetica /Subtype /Type1 /Name /Helv /Type /Font /Encoding 4 0 R >>
+endobj
+15 0 obj
 <<
-/Annots [ 7 0 R 10 0 R 13 0 R ] /Contents 18 0 R /MediaBox [ 0 0 612 792 ] /Parent 17 0 R /Resources <<
+/BBox [ 0 0 200 20 ] /Filter [ /FlateDecode ] /FormType 1 /Length 143 /Matrix [ 1 0 0 1 0 0 ] /Resources << /ProcSet [/PDF /Text] /Font <</Helv 14 0 R>> >> 
+  /Subtype /Form /Type /XObject
+>>
+stream
+xúMè¡
+¬0DÔÛÛ1õööΩZ§ß¡/–^¨`=ËÁª€X≤ìÅÃ≤°0îmC·<"22EŒW‹rÕGà&WÂ¢∫öB)f“z%S„v9ÈÇ’‰Tçã÷ú”Èø≈@a=ßﬁ¢oƒêÈÛÎ±OΩ∞9∏:‚πÙà∂î÷ü.xÿæEè#Cá/±Ó+fendstream
+endobj
+16 0 obj
+<<
+/AP <<
+/N 15 0 R
+>> /BS <<
+/S /I /W 1
+>> /DA (/Helv 12 Tf .1 .1 .1 rg) /DV () /F 4 /FT /Tx 
+  /Ff 0 /MK <<
+/BC [ .1 .1 .1 ] /BG [ .8 .843 1 ]
+>> /MaxLen 100 /P 20 0 R /Rect [ 50 427 250 447 ] /Subtype /Widget 
+  /T (field=value) /TU (Field with equals sign in name) /Type /Annot /V ()
+>>
+endobj
+17 0 obj
+<< /BaseFont /Helvetica /Subtype /Type1 /Name /Helv /Type /Font /Encoding 4 0 R >>
+endobj
+18 0 obj
+<<
+/BBox [ 0 0 200 20 ] /Filter [ /FlateDecode ] /FormType 1 /Length 143 /Matrix [ 1 0 0 1 0 0 ] /Resources << /ProcSet [/PDF /Text] /Font <</Helv 17 0 R>> >> 
+  /Subtype /Form /Type /XObject
+>>
+stream
+xúMè¡
+¬0DÔÛÛ1õööΩZ§ß¡/–^¨`=ËÁª€X≤ìÅÃ≤°0îmC·<"22EŒW‹rÕGà&WÂ¢∫öB)f“z%S„v9ÈÇ’‰Tçã÷ú”Èø≈@a=ßﬁ¢oƒêÈÛÎ±OΩ∞9∏:‚πÙà∂î÷ü.xÿæEè#Cá/±Ó+fendstream
+endobj
+19 0 obj
+<<
+/AP <<
+/N 18 0 R
+>> /BS <<
+/S /I /W 1
+>> /DA (/Helv 12 Tf .1 .1 .1 rg) /DV () /F 4 /FT /Tx 
+  /Ff 0 /MK <<
+/BC [ .1 .1 .1 ] /BG [ .8 .843 1 ]
+>> /MaxLen 100 /P 20 0 R /Rect [ 50 347 250 367 ] /Subtype /Widget 
+  /T (path\\to\\file) /TU (Field with backslashes in name) /Type /Annot /V ()
+>>
+endobj
+20 0 obj
+<<
+/Annots [ 7 0 R 10 0 R 13 0 R 16 0 R 19 0 R ] /Contents 24 0 R /MediaBox [ 0 0 612 792 ] /Parent 23 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 
   /Trans <<
@@ -103,30 +153,30 @@ endobj
 >> /Type /Page
 >>
 endobj
-15 0 obj
+21 0 obj
 <<
-/AcroForm 19 0 R /PageMode /UseNone /Pages 17 0 R /Type /Catalog
+/AcroForm 25 0 R /PageMode /UseNone /Pages 23 0 R /Type /Catalog
 >>
 endobj
-16 0 obj
+22 0 obj
 <<
-/Author (anonymous) /CreationDate (D:20251031130920+01'00') /Creator (ReportLab PDF Library - www.reportlab.com) /Keywords () /ModDate (D:20251031130920+01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author (anonymous) /CreationDate (D:20251031132721+01'00') /Creator (ReportLab PDF Library - www.reportlab.com) /Keywords () /ModDate (D:20251031132721+01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (unspecified) /Title (untitled) /Trapped /False
 >>
 endobj
-17 0 obj
+23 0 obj
 <<
-/Count 1 /Kids [ 14 0 R ] /Type /Pages
+/Count 1 /Kids [ 20 0 R ] /Type /Pages
 >>
 endobj
-18 0 obj
+24 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 231
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 282
 >>
 stream
-Gas2A_$YcZ&;KX;`IHAIk*d1q?&Ca5"Ds^B/@M;3VQAMC\#tu'd14AS+7jtTi2@j2VZPLK/7Sb@Jn?-sm=?=_VhX=d8>(6A]-A\AL$rF:.5##"CRu<C`%G\cV(J#Ci^sOcoFAJ-qL8H#nHIn0]/3dPa95"BAd'i+&NYX4LI-h4c+VRg)=hd>_3L;A`1Y05fu&:LJ+[fG*%0>"US1^mU0_'s4];T,&W@ON"Bp'~>endstream
+Gas3.;2^#k'SbTDI`6M6_7CZ9U0oY.-*JL.G.&nE#!J,(;__Ij^SC4_6Kl5+]QtW]0TefsSljoLiB8BH&!_\I07_baXTiqB6*n-U4TF+!NsI,##LY2Y58R(8D=D\p:+%@"!n#]S&_%D-r:"$BVrc/=NV?Y]_cBu24Nqh(kn7&hhFUU->'A`q4LO>'<p-=fm($kZ69&h8<LPs$$>f8HbEI^US,R#q;]c^,%2;f`fP,DDrChY:\5ff[R*P^@_t_gEi@/$m'['LJX$)X_\e#'i"P&%B~>endstream
 endobj
-19 0 obj
+25 0 obj
 <<
 /DA (/Helv 0 Tf 0 g) /DR << /Encoding
 <<
@@ -134,11 +184,11 @@ endobj
 4 0 R
 >>
 /Font << /Helv 5 0 R >>
->> /Fields [ 7 0 R 10 0 R 13 0 R ]
+>> /Fields [ 7 0 R 10 0 R 13 0 R 16 0 R 19 0 R ]
 >>
 endobj
 xref
-0 20
+0 26
 0000000000 65535 f 
 0000000073 00000 n 
 0000000114 00000 n 
@@ -150,25 +200,31 @@ xref
 0000002417 00000 n 
 0000002515 00000 n 
 0000002884 00000 n 
-0000003190 00000 n 
-0000003289 00000 n 
-0000003660 00000 n 
-0000003970 00000 n 
-0000004198 00000 n 
-0000004285 00000 n 
-0000004582 00000 n 
-0000004643 00000 n 
-0000004965 00000 n 
+0000003188 00000 n 
+0000003287 00000 n 
+0000003658 00000 n 
+0000003962 00000 n 
+0000004061 00000 n 
+0000004432 00000 n 
+0000004739 00000 n 
+0000004838 00000 n 
+0000005209 00000 n 
+0000005519 00000 n 
+0000005761 00000 n 
+0000005848 00000 n 
+0000006145 00000 n 
+0000006206 00000 n 
+0000006579 00000 n 
 trailer
 <<
 /ID 
-[<4d1c3023ef465bac5c4d3e2edb992371><4d1c3023ef465bac5c4d3e2edb992371>]
+[<976638e7bdfd61a92df2549fa2ec0a3d><976638e7bdfd61a92df2549fa2ec0a3d>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
-/Info 16 0 R
-/Root 15 0 R
-/Size 20
+/Info 22 0 R
+/Root 21 0 R
+/Size 26
 >>
 startxref
-5110
+6738
 %%EOF

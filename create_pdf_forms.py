@@ -75,7 +75,7 @@ def create_complex_form():
     y_pos = height - 100
     field_height = 20
     field_width = 200
-    spacing = 40
+    spacing = 35
     
     # name field
     c.setFont("Helvetica", 12)
@@ -95,6 +95,22 @@ def create_complex_form():
     # subscribe checkbox
     c.drawString(50, y_pos, "Subscribe to newsletter:")
     c.acroForm.checkbox(name='subscribe', tooltip='Check to subscribe',
+                       x=200, y=y_pos-5, buttonStyle='check',
+                       borderColor=black, fillColor=white,
+                       textColor=black, forceBorder=True)
+    
+    y_pos -= spacing
+    # agreeToTerms checkbox
+    c.drawString(50, y_pos, "Agree to terms:")
+    c.acroForm.checkbox(name='agreeToTerms', tooltip='Check to agree',
+                       x=200, y=y_pos-5, buttonStyle='check',
+                       borderColor=black, fillColor=white,
+                       textColor=black, forceBorder=True)
+    
+    y_pos -= spacing
+    # newsletter checkbox
+    c.drawString(50, y_pos, "Newsletter:")
+    c.acroForm.checkbox(name='newsletter', tooltip='Check for newsletter',
                        x=200, y=y_pos-5, buttonStyle='check',
                        borderColor=black, fillColor=white,
                        textColor=black, forceBorder=True)
@@ -124,10 +140,42 @@ def create_complex_form():
     c.drawString(310, y_pos, "Other")
     
     y_pos -= spacing
-    # department dropdown - using a simple textfield due to ReportLab limitations
+    # employmentType radio group
+    c.drawString(50, y_pos, "Employment Type:")
+    c.acroForm.radio(name='employmentType', tooltip='Select employment type',
+                    value='FullTime', selected=False,
+                    x=150, y=y_pos-5, buttonStyle='circle',
+                    borderColor=black, fillColor=white,
+                    textColor=black, forceBorder=True)
+    c.drawString(170, y_pos, "Full Time")
+    
+    c.acroForm.radio(name='employmentType', tooltip='Select employment type',
+                    value='PartTime', selected=False,
+                    x=250, y=y_pos-5, buttonStyle='circle',
+                    borderColor=black, fillColor=white,
+                    textColor=black, forceBorder=True)
+    c.drawString(270, y_pos, "Part Time")
+    
+    y_pos -= spacing
+    c.acroForm.radio(name='employmentType', tooltip='Select employment type',
+                    value='Contractor', selected=False,
+                    x=150, y=y_pos-5, buttonStyle='circle',
+                    borderColor=black, fillColor=white,
+                    textColor=black, forceBorder=True)
+    c.drawString(170, y_pos, "Contractor")
+    
+    y_pos -= spacing
+    # department dropdown (as textfield due to ReportLab limitations)
     c.drawString(50, y_pos, "Department (HR/Engineering/Marketing/Sales/Finance):")
     c.acroForm.textfield(name='department', tooltip='Enter department',
                         x=50, y=y_pos-25, borderStyle='inset',
+                        width=field_width, height=field_height)
+    
+    y_pos -= spacing*2
+    # country dropdown (as textfield due to ReportLab limitations)
+    c.drawString(50, y_pos, "Country:")
+    c.acroForm.textfield(name='country', tooltip='Enter country',
+                        x=150, y=y_pos-5, borderStyle='inset',
                         width=field_width, height=field_height)
     
     y_pos -= spacing*2
@@ -159,6 +207,20 @@ def create_special_chars_form():
     c.setFont("Helvetica", 12)
     c.drawString(50, y_pos, "User Name (field: user.name):")
     c.acroForm.textfield(name='user.name', tooltip='Field with dot in name',
+                        x=50, y=y_pos-25, borderStyle='inset',
+                        width=field_width, height=field_height)
+    
+    y_pos -= spacing*2
+    # user_email field
+    c.drawString(50, y_pos, "User Email (field: user_email):")
+    c.acroForm.textfield(name='user_email', tooltip='Field with underscore in name',
+                        x=50, y=y_pos-25, borderStyle='inset',
+                        width=field_width, height=field_height)
+    
+    y_pos -= spacing*2
+    # address-line1 field
+    c.drawString(50, y_pos, "Address Line 1 (field: address-line1):")
+    c.acroForm.textfield(name='address-line1', tooltip='Field with hyphen in name',
                         x=50, y=y_pos-25, borderStyle='inset',
                         width=field_width, height=field_height)
     
