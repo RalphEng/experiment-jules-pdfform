@@ -10,7 +10,7 @@ from reportlab.lib.colors import black, white
 
 def create_simple_form():
     """Create sample-form-simple.pdf with basic text fields"""
-    filename = "/home/engelmann/dev/experiment-pdf-form/src/test/resources/pdfs/sample-form-simple.pdf"
+    filename = "src/test/resources/pdfs/sample-form-simple.pdf"
     c = canvas.Canvas(filename, pagesize=letter)
     width, height = letter
     
@@ -64,7 +64,7 @@ def create_simple_form():
 
 def create_complex_form():
     """Create sample-form-complex.pdf with multiple field types"""
-    filename = "/home/engelmann/dev/experiment-pdf-form/src/test/resources/pdfs/sample-form-complex.pdf"
+    filename = "src/test/resources/pdfs/sample-form-complex.pdf"
     c = canvas.Canvas(filename, pagesize=letter)
     width, height = letter
     
@@ -190,7 +190,7 @@ def create_complex_form():
 
 def create_special_chars_form():
     """Create sample-form-special-chars.pdf with special character field names"""
-    filename = "/home/engelmann/dev/experiment-pdf-form/src/test/resources/pdfs/sample-form-special-chars.pdf"
+    filename = "src/test/resources/pdfs/sample-form-special-chars.pdf"
     c = canvas.Canvas(filename, pagesize=letter)
     width, height = letter
     
